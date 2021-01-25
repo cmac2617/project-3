@@ -1,9 +1,10 @@
 
-import React from "react";
-import Navbar from "./components/Navbar/Navbar"
+import React from 'react';
+import Navbar from './components/Navbar/Navbar.js';
 
 function App() {
-    return(
+
+    return (
         <div className="App">
             test
             <Navbar/>
@@ -11,4 +12,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
