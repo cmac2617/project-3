@@ -4,7 +4,7 @@ import { useState, UseEffect } from "react";
 function List() {
     const [events, showEvents] = useState([])
     useEffect(() => {
-        fetch("API-ROUTE")
+        fetch("https://www.eventbriteapi.com/v3")
         .then((data => data.json()))
         .then((data => setUsers(data.results)))
     }, [])
