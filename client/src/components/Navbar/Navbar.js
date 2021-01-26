@@ -5,17 +5,25 @@ class Navbar extends Component {
     render() {
         return(
             <div>
-            <nav className="NavbarItems">
-                <h1 className="Navbar-logo"> Fun Finder </h1>
-                <div>
-                <ul>
-                   <li className="listitems"> <a href="#"></a> Home</li>
-                   <li className="listitems"> <a href="#"></a> About</li>
-                   <li className="listitems"> <a href="#"></a> Contact</li>
-                   <li className="listitems"> <a href='/Register/register.js'></a> Register</li>
-                </ul>
-                </div>
-            </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="#">Fun Finder</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link" href="#">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+              
+    
             </div>
         )
     }
