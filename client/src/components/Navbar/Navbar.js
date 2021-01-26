@@ -6,7 +6,7 @@ class Navbar extends Component {
         return(
             <div>
             <nav className="NavbarItems">
-                <h1 className="Navbar-logo"> FunFinder </h1>
+                <h1 className="Navbar-logo"> Fun Finder </h1>
                 <div>
                 <ul>
                    <li className="listitems"> <a href="#"></a> Home</li>
