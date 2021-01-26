@@ -1,10 +1,12 @@
 
 import "./App.css"
-import Main from "./pages/Main"
-import register from "./pages/Register"
-import login from "./pages/Login"
+import Main from "./pages/main"
+import Navbar from "./components/Navbar/Navbar"
+import register from "./pages/register"
+import Login from "./pages/login"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import login from "./pages/login"
 
 function App() {
     return (
@@ -12,17 +14,18 @@ function App() {
             <Router>
 
                 <Switch>
-                    <Route path="/">
+                    <Route path="/main">
                         <Navbar/>
                         <Main />
                     </Route>
                     <Route path="/register">
                     <Navbar/>
+                    
                     </Route>
                     <Route path="/login">
-
-                    </Route>
                     <Navbar/>
+                    </Route>
+                    
                 </Switch>
             </Router>
         </div>
