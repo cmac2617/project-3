@@ -4,6 +4,7 @@ import './Navbar.css';
 class Navbar extends Component { 
     render() {
         return(
+            <div>
             <nav className="NavbarItems">
                 <h1 className="Navbar-logo"> FunFinder </h1>
                 <div>
@@ -14,9 +15,8 @@ class Navbar extends Component {
                    <li className="listitems"> <a href='/Register/register.js'></a> Register</li>
                 </ul>
                 </div>
-
-               
             </nav>
+            </div>
         )
     }
 
