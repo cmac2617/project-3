@@ -3,10 +3,9 @@ import "./App.css"
 import Main from "./pages/main"
 import Navbar from "./components/Navbar/Navbar"
 import register from "./pages/register"
-import Login from "./pages/login"
+import Login from "./pages/Login/login"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import login from "./pages/login"
 
 function App() {
     return (
@@ -24,8 +23,9 @@ function App() {
                     </Route>
                     <Route path="/login">
                     <Navbar/>
+                    <Login/>
                     </Route>
-                    
+                   
                 </Switch>
             </Router>
         </div>
