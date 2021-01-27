@@ -1,8 +1,8 @@
 
 import "./App.css"
-import Main from "./pages/Main"
-import register from "./pages/Register"
-import login from "./pages/Login"
+import Main from "./pages/main";
+import register from "./pages/register";
+import login from "./pages/login";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
