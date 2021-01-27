@@ -1,5 +1,5 @@
 import API from "../utils/API";
-import Login from "../components/Login/Login.js";
+import Login from "../components/Login/login.js";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 import Navbar from "../components/Navbar/Navbar.js"
 API.getEvents()
@@ -12,6 +12,7 @@ function Main () {
     <>
    <Navbar />
    <Jumbotron />
+
    </>
   )
 }
