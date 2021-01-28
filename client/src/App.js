@@ -14,7 +14,6 @@ function App() {
 
                 <Switch>
                     <Route path="/">
-                        <Navbar/>
                         <Main />
                     </Route>
                     <Route path="/register">
