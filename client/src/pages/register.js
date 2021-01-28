@@ -1,9 +1,19 @@
 import "../App.css"
+import Navbar from "../components/Navbar/Navbar.js"
 
-function register () {
-    return(
-        "Register here"
-    )
+// API.getEvents()
+// .then(function (response) {
+//     const data = JSON.stringify(response.data);
+//   })
+
+function Register () {
+  return (
+    <>
+   <Navbar />
+  
+
+   </>
+  )
 }
 
-export default register;
+export default Register;

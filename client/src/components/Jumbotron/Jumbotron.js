@@ -2,10 +2,10 @@ import "../../App.css"
 
 function Jumbotron () {
     return (
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid style">
   <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <h1 class="display-4 title">Fun Finder</h1>
+    <p class="lead subtitle"> Exploration Starts Today!</p>
   </div>
 </div>
     )

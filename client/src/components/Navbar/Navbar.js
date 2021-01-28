@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Navbar.css';
 
+
 class Navbar extends Component {
     render() {
         return (
             <div>
-
-
+            
                 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+
                     <div class="container-fluid">
                         <a class="navbar-brand logo" href="#">Fun Finder</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +21,11 @@ class Navbar extends Component {
                                 <a class="nav-link" href="#">Login</a>
                             </div>
                         </div>
+
+
+
                     </div>
                 </nav>
-
-
             </div>
         )
     }

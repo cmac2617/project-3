@@ -1,9 +1,15 @@
 @media all and (min-width: 480px) {
     .Register {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     .Register form {
         margin: 0 auto;
         max-width: 320px;
     }
+}
+
+.login{
+    color: white;
+    font-weight: 900;
+    font-family: 'Candal', sans-serif;
 }
