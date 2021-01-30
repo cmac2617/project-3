@@ -8,4 +8,6 @@ router.post("/route", function (req, res) {
 });
 router.route("/newplace").post(orm.create);
 
+app.use("/api/users", users);
+
 module.exports = router;
