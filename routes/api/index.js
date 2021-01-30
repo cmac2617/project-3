@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const orm = require("../../controllers/controller")
+const orm = require("../../controllers/controller");
+const users = require("./routes/users");
 
 router.post("/api/route", function (req, res) {
     console.log(req.body)
