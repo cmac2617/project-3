@@ -1,7 +1,13 @@
 const router = require("express").Router();
-const bookRoutes = require("./routes");
+const orm = require("../../controllers/controller");
+const users = require("./routes/users");
 
-// Book routes
-router.use("/routes", bookRoutes);
+router.post("/route", function (req, res) {
+  console.log(req.body);
+  res.json(req.body);
+});
+router.route("/newplace").post(orm.create);
+
+app.use("/api/users", users);
 
 module.exports = router;

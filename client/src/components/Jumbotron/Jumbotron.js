@@ -1,3 +1,4 @@
+// Jumbotron 
 import "../../App.css"
 
 function Jumbotron () {

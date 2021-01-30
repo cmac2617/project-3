@@ -1,13 +1,16 @@
-import Navbar from "../components/Navbar/Navbar.js"
+// Employee Profile After Login 
 
-function Register () {
+import Navbar from "../components/Navbar/Navbar.js"
+import Profile from "../components/Profile/profile"
+
+function Userpage () {
     return (
       <>
      <Navbar />
-    
+     <Profile/>
   
      </>
     )
   }
   
-  export default Register;
+  export default Userpage;
