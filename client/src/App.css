@@ -1,0 +1,19 @@
+body{ 
+    background-color: black;
+    background-image: url(brim.jpeg) ;
+}
+/* Jumnbotron */
+.title {
+    font-family: 'Rock Salt', cursive;
+    color: #fff;
+}
+
+.subtitle {
+    font-family: 'Rock Salt', cursive;
+    color: #fff; 
+}
+
+.style {
+    opacity: 75%;
+    background-color: rgb(61, 58, 58);
+}

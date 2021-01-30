@@ -14,10 +14,9 @@ function App() {
             <Main />
           </Route>
           <Route path="/register">
-            <Navbar />
+    
           </Route>
-          <Route path="/login">
-            <Navbar />
+          <Route path="/userpage">
             <Login />
           </Route>
         </Switch>
