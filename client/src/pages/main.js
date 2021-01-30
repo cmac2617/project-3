@@ -1,6 +1,5 @@
 import API from "../utils/API";
 import React, { useEffect, useState } from "react";
-import Login from "../components/Login/Login.js";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 import Navbar from "../components/Navbar/Navbar.js"
 import { Input, FormBtn } from "../components/Newplaceform/Newplaceform.js"

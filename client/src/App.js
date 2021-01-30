@@ -1,7 +1,6 @@
 import "./App.css";
-import Main from "./pages/main.js";
+import Main from "./pages/Main.js";
 import Navbar from "./components/Navbar/Navbar.js";
-import register from "./pages/register.js";
 import Login from "./components/Login/Login.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
