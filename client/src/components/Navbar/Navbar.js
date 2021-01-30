@@ -1,15 +1,32 @@
-import "../../App.css"
+import React, { Component } from 'react';
+import './Navbar.css';
 
-function Navbar () {
-    return (
-        <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand">Navbar</a>
-  <form class="form-inline">
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-  </form>
-</nav>
-    )
+class Navbar extends Component {
+    render() {
+        return (
+            <div>
+
+
+                <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                    <div className="container-fluid">
+                        <a className="navbar-brand logo" href="#">Fun Finder</a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div className="navbar-nav">
+                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link" href="#">Register</a>
+                                <a className="nav-link" href="#">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        )
+    }
+
 }
-
-export default Navbar;
+export default Navbar
