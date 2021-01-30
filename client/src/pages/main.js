@@ -11,8 +11,7 @@ import { Input, FormBtn } from "../components/Newplaceform/Newplaceform.js"
 
 function Main () {
 // Function to submit a new place.
-const [titleN, setTitle] = useState()
-const [locationA, setLocation] = useState()
+const [formObject, setFormObject] = useState({});
 
 useEffect(() => {
   // API.savePlace({ 
@@ -22,17 +21,14 @@ useEffect(() => {
 })
 
 function handleFormSubmit (event) {
-  event.preventdefault();
+  // event.preventdefault();
   console.log("submitted")
-  API.savePlace({
-    title: titleN,
-    location: locationA
-  }).then(results => console.log(results))
+  API.savePlace(formObject).then(results => console.log(results))
 }
 
 function handleInputChange(event) {
   const { name, value } = event.target;
-  setTitle(value)
+  setFormObject({...formObject, [name]: value})
 };
   return (
     <>
@@ -42,6 +38,11 @@ function handleInputChange(event) {
               <Input
                 name="title"
                 placeholder="Title (required)"
+                onChange={handleInputChange}
+              />
+              <Input
+                name="location"
+                placeholder="Location (required)"
                 onChange={handleInputChange}
               />
               <FormBtn
