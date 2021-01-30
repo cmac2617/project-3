@@ -2,12 +2,10 @@ const router = require("express").Router();
 const orm = require("../../controllers/controller");
 const users = require("./routes/users");
 
-router.post("/route", function (req, res) {
-  console.log(req.body);
-  res.json(req.body);
-});
-router.route("/newplace").post(orm.create);
-
-app.use("/api/users", users);
+router.post("/api/route", function (req, res) {
+    console.log(req.body)
+    res.json(req.body)
+})
+router.route("/api/newplace").post(orm.create)
 
 module.exports = router;

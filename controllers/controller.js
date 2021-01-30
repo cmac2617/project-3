@@ -7,5 +7,5 @@ module.exports = {
         console.log("in create")
         db.create(req.body)
         .then(dbModel => res.json(dbModel))
-    }
+    },
 }
