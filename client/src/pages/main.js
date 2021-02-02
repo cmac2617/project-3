@@ -4,8 +4,8 @@ import Login from "../components/Login/Login.js";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 import Navbar from "../components/Navbar/Navbar.js"
 import { Input, FormBtn } from "../components/Newplaceform/Newplaceform.js"
-import { response } from "express";
-import axios from "axios";
+// import { response } from "express";
+import Axios from "axios";
 // API.getEvents()
 // .then(function (response) {
 //     const data = JSON.stringify(response.data);
