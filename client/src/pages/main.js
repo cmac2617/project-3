@@ -40,9 +40,8 @@ function handleInputChange(event) {
    <Navbar />
    {/* jumbotron */}
    <Jumbotron />
-   {/* login input */}
-   <Login/> 
- 
+   <Login />
+   
    <form>
               <Input
                 name="title"
