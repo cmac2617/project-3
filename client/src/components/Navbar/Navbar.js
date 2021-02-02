@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './Navbar.css';
+import {
+    Link
+} from "react-router-dom";
 
 class Navbar extends Component {
     render() {
@@ -15,9 +18,8 @@ class Navbar extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                                <a className="nav-link" href="#">Register</a>
-                                <a className="nav-link" href="#">Login</a>
+                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" aria-current="page" href="/register">Register</a>
                             </div>
                         </div>
                     </div>
