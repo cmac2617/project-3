@@ -13,9 +13,8 @@ function App() {
           <Route path="/">
             <Main />
           </Route>
-          <Route path="/register">
-    
-          </Route>
+          <Route path="/register"></Route>
+          <Route />
           <Route path="/userpage">
             <Login />
           </Route>
