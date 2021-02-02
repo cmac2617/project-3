@@ -36,6 +36,7 @@ function handleInputChange(event) {
     <>
    <Navbar />
    <Jumbotron />
+   <Login />
    <form>
               <Input
                 name="title"
