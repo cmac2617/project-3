@@ -2,7 +2,7 @@
 
 import Navbar from "../components/Navbar/Navbar.js"
 import Profile from "../components/Profile/profile"
-import { Input, FormBtn, Date, Category } from "../components/Newplaceform/Newplaceform.js"
+import { Input, FormBtn, Date, Category } from "../components/Newplaceform/NewPlaceForm.js"
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 
@@ -37,11 +37,16 @@ function Userpage () {
               />
               <Date
                 name="startDate"
-                placeholder="start Date (not required)"
+                placeholder="Start Date (not required)"
+                onChange={handleInputChange}
+              />
+              <Date
+                name="endDate"
+                placeholder="End Date (not required)"
                 onChange={handleInputChange}
               />
               <Category 
-              name="Category"
+              name="category"
               onChange={handleInputChange}
               />
               <FormBtn

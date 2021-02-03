@@ -6,7 +6,6 @@ const placesSchema = new Schema({
   location: { type: String, required: true },
   startDate: { type: Date, required: false },
   endDate: { type: Date, required: false },
-  entryFee: { type: Boolean, required: true},
   category: { type: String, required: true }
 });
 
