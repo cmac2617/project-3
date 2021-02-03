@@ -16,11 +16,11 @@ export function Input(props) {
     );
   }
 
-  export function Category() {
+  export function Category(props) {
     return(
 <div className="form-group">
   <label for="multichoice">Example multiple select</label>
-    <select className="form-control" id="multichoice">
+    <select className="form-control" id="multichoice" {...props}>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>

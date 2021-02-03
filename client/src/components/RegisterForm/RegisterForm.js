@@ -1,44 +1,46 @@
-import React, { useState, Component } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "./Register.css";
+import React, { useState } from "react";
+import API from "../../utils/API";
+import { Input, FormBtn } from "../Newplaceform/NewPlaceForm.js"
 
-export default function Register() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+export default function Login() {
+  const [formObject, setFormObject] = useState({});
 
-  function validateForm() {
-    return email.length > 0 && password.length > 12;
-  }
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value})
+  };
 
-  function handleSubmit(event) {
+  function handleFormSubmit (event) {
     event.preventDefault();
+    console.log("submitted")
+    API.saveUser(formObject).then(results => console.log(results))
   }
 
   return (
     <div className="Register">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Register
-        </Button>
-      </Form>
+      <form>
+      <Input
+                name="name"
+                placeholder="Name (required)"
+                onChange={handleInputChange}
+              />
+              <Input
+                name="email"
+                placeholder="E-mail (required)"
+                onChange={handleInputChange}
+              />
+              <Input
+                name="password"
+                placeholder="Password (required)"
+                onChange={handleInputChange}
+              />
+              <FormBtn
+                // disabled={!(formObject.author && formObject.title)}
+                onClick={handleFormSubmit}
+              >
+                Submit Place
+              </FormBtn>
+              </form>
     </div>
   );
 }
