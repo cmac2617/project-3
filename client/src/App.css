@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-/* BODY STYLE */
-=======
->>>>>>> 66c285ef9fb44c65c539ce23b1487028a3407691
 body{ 
     background-color: black;
-    background-image: url(brim.jpeg) ;
+    background-image: url(brim.jpeg);
+    background-size: cover;
 }
 /* Jumnbotron */
 .title {
