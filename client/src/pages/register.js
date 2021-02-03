@@ -1,19 +1,13 @@
-import "../App.css"
-import Navbar from "../components/Navbar/Navbar.js"
-
-// API.getEvents()
-// .then(function (response) {
-//     const data = JSON.stringify(response.data);
-//   })
-
-function Register () {
+import "../App.css";
+import React, { useEffect, useState } from "react";
+import RegisterForm from "../components/RegisterForm/RegisterForm.js";
+import Navbar from "../components/Navbar/Navbar.js";
+function Register() {
   return (
     <>
-   <Navbar />
-  
-
-   </>
-  )
+      <Navbar />
+      <RegisterForm />
+    </>
+  );
 }
-
 export default Register;
