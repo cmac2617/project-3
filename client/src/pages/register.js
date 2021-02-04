@@ -1,9 +1,13 @@
-import "../App.css"
-
-function register () {
-    return(
-        "Register here"
-    )
+import "../App.css";
+import React, { useEffect, useState } from "react";
+import RegisterForm from "../components/RegisterForm/RegisterForm.js";
+import Navbar from "../components/Navbar/Navbar.js";
+function Register() {
+  return (
+    <>
+      <Navbar />
+      <RegisterForm />
+    </>
+  );
 }
-
-export default register;
+export default Register;

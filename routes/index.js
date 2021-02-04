@@ -1,18 +1,37 @@
 const router = require("express").Router();
-const orm = require("../controllers/controller");
-const users = require("./users.js");
-const express = require("express");
-const app = express();
+// const orm = require("../../controllers/controller");
+const dbuser = require("../models/user");
+const dbplaces = require("../models/places");
+const User = require("../models/user");
 
-router.post("/route", function (req, res) {
+router.post("/api/route", function (req, res) {
   console.log(req.body);
   res.json(req.body);
 });
-router.route("/newplace").post(orm.create);
+router.post("/api/newplace", function (req, res) {
+  console.log(req.body);
+  dbplaces.create(req.body);
+  res.json(req.body);
+});
 
-app.use("/api/users", users);
+router.post("/api/newuser", function (req, res) {
+  console.log(req.body);
+  dbuser.create(req.body);
+  res.json(req.body);
+});
 
-const port = process.env.PORT || 4000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+router.post("api/login", function (req, res) {
+  if (!email || !password)
+    return res.status(400).json({ msg: "Not all fields are filled in." });
+  User.findOne({ email: email });
 
+  app.post(
+    "/login",
+    passport.authenticate("local", {
+      successRedirect: "/",
+      failureRedirect: "/login",
+      failureFlash: true,
+    })
+  );
+});
 module.exports = router;
