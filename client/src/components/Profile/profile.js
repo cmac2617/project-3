@@ -8,15 +8,16 @@ class Profile extends Component {
         return (
 
         <div>  
-            <div class="card">
+            <div class="card cardstyle">
   <div class="card-body">
     <h1> Welcome Back</h1>
+    
   </div>
 </div>
 
                     {/* heading Card  */}
                     <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
@@ -25,7 +26,7 @@ class Profile extends Component {
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>

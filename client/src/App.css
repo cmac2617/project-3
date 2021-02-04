@@ -18,3 +18,12 @@ body{
     opacity: 75%;
     background-color: rgb(61, 58, 58);
 }
+
+.formstyle {
+    margin-right: 2px;
+    display: block;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+

@@ -2,9 +2,11 @@
 
 import Navbar from "../components/Navbar/Navbar.js"
 import Profile from "../components/Profile/profile"
-import { Input, FormBtn, Date, Category } from "../components/Newplaceform/Newplaceform.js"
+import { Input, FormBtn, Date, Category } from "../components/Newplaceform/Newplaceform"
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
+import "../App.css"
+
 
 function Userpage () {
 
@@ -24,6 +26,10 @@ function Userpage () {
 <>
      <Navbar />
      <Profile/>
+     <div class="card formstyle">
+  <div class="card-body">
+    <h1> Search Events</h1>
+    <br></br>
      <form>
               <Input
                 name="title"
@@ -51,7 +57,8 @@ function Userpage () {
                 Submit Place
               </FormBtn>
               </form>
-  
+  </div>
+</div>
      </>
     );
       
