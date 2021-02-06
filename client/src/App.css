@@ -21,9 +21,12 @@ body{
 
 .formstyle {
     margin-right: 2px;
-    display: block;
-    float: right;
-    width: 20%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
+   
+}
+
+.cardstyle {
+    padding-left: 5%;
 }
 

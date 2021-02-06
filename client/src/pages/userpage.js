@@ -26,11 +26,13 @@ function Userpage () {
 <>
      <Navbar />
      <Profile/>
+     <br></br>
      <div class="card formstyle">
-  <div class="card-body">
+  <div class="card-body cardstyle">
     <h1> Search Events</h1>
     <br></br>
      <form>
+     
               <Input
                 name="title"
                 placeholder="Title (required)"
@@ -57,6 +59,8 @@ function Userpage () {
                 Submit Place
               </FormBtn>
               </form>
+
+              
   </div>
 </div>
      </>
