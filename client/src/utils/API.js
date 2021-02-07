@@ -11,5 +11,23 @@ export default {
   saveUser: function(userData) {
     console.log("Works")
     return axios.post("/api/newuser", userData)
+  },
+  login: function(userData) {
+    console.log("Works")
+    return axios.post("/api/login", userData)
+  },
+  findPlaceTitle: function(term) {
+    console.log("works")
+    return axios.post("/api/findplacetitle", term)
+
+  },
+  findPlaceCategory: function(term) {
+
+  },
+  findAll: function(term) {
+
+  },
+  test: function(data) {
+    return axios.post("/test/route", data)
   }
   };
