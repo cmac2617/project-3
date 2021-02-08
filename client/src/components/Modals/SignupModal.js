@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import { Form, Button, Modal, Nav } from "react-bootstrap";
+import { Form, Button, Modal } from "react-bootstrap";
 import './Modal.css'
 
 
-class LoginModal extends Component {
+class SignupModal extends Component {
   // contructor(props) {
   //   super(props);
   // }
@@ -12,22 +12,14 @@ class LoginModal extends Component {
     return (
       <Modal
         {...this.props}
-        size="md"
+        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter" className="Mlog">
-            Log in
+          <Modal.Title id="contained-modal-title-vcenter">
+            Sign up or Log in
           </Modal.Title>
-          {/* <Nav variant="tabs" defaultActiveKey="#first">Gr
-      <Nav.Item>
-        <Nav.Link href="#first">Log In</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="#link">Sign Up</Nav.Link>
-      </Nav.Item>
-      </Nav> */}
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -44,7 +36,6 @@ class LoginModal extends Component {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
           </Form>
-          <p>Not a member yet? <a href="/Register">Sign up.</a></p>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={this.props.onHide}>Close</Button>
@@ -54,4 +45,4 @@ class LoginModal extends Component {
   }
 }
 
-export default LoginModal;
+export default SignupModal;

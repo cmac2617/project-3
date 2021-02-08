@@ -1,0 +1,16 @@
+.Modal.Title {
+    text-align: center !important;
+
+
+}
+
+.close { 
+    position: absolute; 
+    right: 1rem;
+  }
+
+.form-control {
+    width: 100% !important;
+  }
+
+  :focus {outline:0 !important;}
