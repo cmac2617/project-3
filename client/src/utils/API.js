@@ -16,13 +16,14 @@ export default {
     console.log("Works")
     return axios.post("/api/login", userData)
   },
-  findPlaceTitle: function(term) {
+  findPlaceByCategory: function(term) {
     console.log("works")
     return axios.post("/api/findplacetitle", term)
 
   },
-  findPlaceCategory: function(term) {
-
+  findPlaceByState: function(term) {
+console.log("works")
+return axios.post("/api/findplacestate", term)
   },
   findAll: function(term) {
 

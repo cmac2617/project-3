@@ -18,3 +18,7 @@ body{
     opacity: 75%;
     background-color: rgb(61, 58, 58);
 }
+form{
+    color: white;
+    font-size: x-large;
+}

@@ -52,6 +52,12 @@ router.post("/api/findplacetitle", function(req, res) {
   dbplaces.find(req.body).then(results => console.log(results))
   
 })
+router.post("/api/findplacestate", function(req, res) {
+  console.log("HERE WE ARE for STATE");
+  console.log(req.body)
+  dbplaces.find(req.body).then(results => console.log(results))
+  
+})
 
 
 module.exports = router;

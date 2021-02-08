@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import API from "../../utils/API";
-import { Input, FormBtn } from "../Newplaceform/NewPlaceForm.js"
+import { Input, FormBtn } from "../NewPlaceForm/NewPlaceForm.js"
 
 export default function Login() {
   const [formObject, setFormObject] = useState({});

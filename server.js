@@ -33,7 +33,9 @@ passport.use(new LocalStrategy({
 },
 function(email, password, done) {
     console.log("IT IS WORKING");
+    console.log(email, password)
     User.findOne({ email: email }, function(err, user) {
+      console.log(user)
       if (err) { return done(err); }
       if (!user) {
         return done(null, false, { message: 'Incorrect username.' });

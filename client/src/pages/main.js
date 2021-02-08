@@ -32,8 +32,11 @@ function Main() {
       console.log("submitted")
       console.log(formObject)
       API.login(formObject).then(results => {
-        console.log(results)
-        history.push("/userpage")
+        console.log(results.data)
+        if (results.data !== "username incorrect") {
+          history.push("/userpage")
+        }
+
       })
   };
   // function doTest() {
