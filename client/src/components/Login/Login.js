@@ -4,19 +4,19 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
 
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
+export function Input(props) {
   return (
+    <form action="login" method="post">
+      <div className="form-group">
+        <input className="form-control" {...props} />
+      </div>
+    </form>
+  );
+}
+
+export function FormBtn(props) {
+  return (
+<<<<<<< HEAD
     <div className="Login loginstyle">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
@@ -41,5 +41,14 @@ export default function Login() {
         </Button>
       </Form>
     </div>
+=======
+    <button
+      {...props}
+      style={{ float: "right", marginBottom: 10 }}
+      className="btn btn-success"
+    >
+      {props.children}
+    </button>
+>>>>>>> 6f2f64d9bbb4a431e51ca8fd285eb70037651ccb
   );
 }
