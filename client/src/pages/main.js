@@ -1,5 +1,6 @@
 import API from "../utils/API";
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 import Navbar from "../components/Navbar/Navbar.js";
 import { Input, FormBtn } from "../components/Login/Login.js";
@@ -11,6 +12,7 @@ import { Input, FormBtn } from "../components/Login/Login.js";
 
 function Main() {
   // Function to submit a new place.
+  let history = useHistory();
   const [formObject, setFormObject] = useState({});
 
   useEffect(() => {
@@ -25,18 +27,24 @@ function Main() {
     setFormObject({ ...formObject, [name]: value });
   }
 
-  function handleFormSubmit(object) {
-    // event.preventdefault();
-    // if (!email || !password)
-    //   return (res.status(400).json({ msg: "Not all fields are filled in." }));
-    //   const user = User.findOne({email: email});
-    // // const isMatch;
-    // if (formObject.password = user.password)
-    // API.savePlace(formObject).then(results => console.log(results))
-  }
+  function handleFormSubmit() {
+      // event.preventdefault();
+      console.log("submitted")
+      console.log(formObject)
+      API.login(formObject).then(results => {
+        console.log(results.data)
+        if (results.data !== "username incorrect") {
+          history.push("/userpage")
+        }
+
+      })
+  };
+  // function doTest() {
+  //   API.test(formObject).then(results => console.log(results))
+  // }
 
   return (
-    <>
+    <div>
       <Navbar />
 
       
@@ -52,14 +60,14 @@ function Main() {
           placeholder="Enter your password."
           onChange={handleInputChange}
         />
-        <FormBtn
-          // disabled={!(formObject.author && formObject.title)}
+        <button
+          type="button"
           onClick={handleFormSubmit}
         >
           Submit Place
-        </FormBtn>
+        </button>
       </form>
-    </>
+    </div>
   );
 }
 
