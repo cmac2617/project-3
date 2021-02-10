@@ -5,15 +5,9 @@ import API from "../utils/API";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
-<<<<<<< HEAD
-import Navbar from "../components/Navbar/Navbar.js"
-import { Input, FormBtn } from "../components/Newplaceform/Newplaceform.js"
-
-=======
 import Navbar from "../components/Navbar/Navbar.js";
 import { Input, FormBtn } from "../components/Login/Login.js";
 // import User from "../../models/user.js"
->>>>>>> 6f2f64d9bbb4a431e51ca8fd285eb70037651ccb
 // API.getEvents()
 // .then(function (response) {
 //     const data = JSON.stringify(response.data);
@@ -36,38 +30,6 @@ function Main() {
     setFormObject({ ...formObject, [name]: value });
   }
 
-<<<<<<< HEAD
-function handleInputChange(event) {
-  const { name, value } = event.target;
-  setFormObject({...formObject, [name]: value})
-};
-  return (
-    <>
-    {/* navigation bar */}
-   <Navbar />
-   {/* jumbotron */}
-   <Jumbotron />
-   <Login />
-   
-   <form>
-              <Input
-                name="title"
-                placeholder="Title (required)"
-                onChange={handleInputChange}
-              />
-              <Input
-                name="location"
-                placeholder="Location (required)"
-                onChange={handleInputChange}
-              />
-              <FormBtn
-                // disabled={!(formObject.author && formObject.title)}
-                onClick={handleFormSubmit}
-              >
-                Submit Place
-              </FormBtn>
-              </form>
-=======
   function handleFormSubmit() {
       // event.preventdefault();
       console.log("submitted")
@@ -77,7 +39,6 @@ function handleInputChange(event) {
         if (results.data !== "username incorrect") {
           history.push("/userpage")
         }
->>>>>>> 6f2f64d9bbb4a431e51ca8fd285eb70037651ccb
 
       })
   };

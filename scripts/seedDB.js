@@ -209,5 +209,46 @@ const placesSeed = [
   endDate: "",
   category: "Bar"
   },
+  {
+    title: "Don Gi's Pizzeria",
+  description: "Pizzeria",
+  addresss: "2159 Broadview rd, Cleveland, OH 44109",
+  phone: "(216)712-4692",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Pizza"
+  },
+  {
+    title: "Pizza 216",
+  description: "Pizzeria",
+  addresss: "401 Euclid Ave Clevelandm OH 44114",
+  phone: "(216)741-7992",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Pizza"
+  },
+  {
+    title: "Gionini's Pizza",
+  description: "Pizzeria",
+  addresss: "3314 Warren Rd, Cleveland 44111",
+  phone: "(216)941-2700",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Pizza"
+  },
+  {
+    title: "Ohio City Pizzeria",
+  description: "Pizzeria",
+  addresss: "3223 Lorain ave, Cleveland 44113",
+  phone: "(216)281-5252",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Pizza"
+  },
+
 ];
 places.collection.insertMany(seedData)
