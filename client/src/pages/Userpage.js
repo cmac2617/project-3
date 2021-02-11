@@ -1,9 +1,9 @@
 // After user logs in.
 import UserNavbar from "../components/UserNavbar/UserNavbar.js"
-import { Input, FormBtn, Date, Category, State, Image } from "../components/NewPlaceForm/NewPlaceForm.js"
+import { Input, FormBtn, Date, Category, State } from "../components/NewPlaceForm/NewPlaceForm.js"
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import "../App.css"
+import "./Userpage.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js"
@@ -102,7 +102,8 @@ function Userpage() {
           <Jumbotron />
           </div>
           <div className="col-2">
-            <form action="/action_page.php">Add your business or event!
+            <form>
+              Add your business or event!
         <Input
                 name="title"
                 placeholder="Title (required)"
@@ -167,8 +168,7 @@ function Userpage() {
             {category.map(each => {
               return (
 
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+                <div className="card">
                   <div data-aos="fade-up" className="boxes">
                     <div class="card-body">
                       <h5 class="card-title">{each.title}</h5>
@@ -181,8 +181,6 @@ function Userpage() {
                       <p class="card-text">Start Date: {each.startDate}</p>
                       <p class="card-text">Address: {each.endDate}</p>
                     </div>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
               )
@@ -198,7 +196,6 @@ function Userpage() {
             {state.map(each => {
               return (
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">{each.title}</h5>
                     <p class="card-text">{each.category}</p>
@@ -209,8 +206,6 @@ function Userpage() {
                     <p class="card-text">State: {each.state}</p>
                     <p class="card-text">Start Date: {each.startDate}</p>
                     <p class="card-text">Address: {each.endDate}</p>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
               )
@@ -221,7 +216,6 @@ function Userpage() {
             {filterObject.map(each => {
               return (
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">{each.title}</h5>
                     <p class="card-text">{each.category}</p>
@@ -232,8 +226,6 @@ function Userpage() {
                     <p class="card-text">State: {each.state}</p>
                     <p class="card-text">Start Date: {each.startDate}</p>
                     <p class="card-text">Address: {each.endDate}</p>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
               )
