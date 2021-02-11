@@ -7,25 +7,14 @@ import {
 import API from "../../utils/API";
 
 // Component
-function UserNavbar () {
-
-    // State and functions.
-    const [category, setCategory] = useState({});
-    const [state, setState] = useState({});
-
-    function handleInputChangeCategory(event) {
-        setCategory(event.target.value)
-        API.findPlaceByCategory({ category: event.target.value }).then(results => console.log(results))
-        console.log(event.target.value)
-    }
-
-    function handleInputChangeState(event) {
-        setState(event.target.value)
-        API.findPlaceByState({ state: event.target.value }).then(results => console.log(results))
-        console.log(event.target.value)
-    }
-
-
+function UserNavbar({ handleInputChangeCategory,
+    handleInputChangeState,
+    handleInputChangeStateFilter,
+    handleInputChangeCategoryFilter,
+    handleInputChangeStartDateFilter,
+    handleInputChangeEndDateFilter,
+    createFilteredList
+}) {
     return (
         <div>
 
@@ -43,12 +32,34 @@ function UserNavbar () {
                         </div>
                         <div>
                             <Category
-                                onChange={e => handleInputChangeCategory(e)} />
+                                onChange={handleInputChangeCategory} />
                         </div>
                         <div>
                             <State
-                            onChange={e => handleInputChangeState(e)} />
+                                onChange={handleInputChangeState} />
                         </div>
+                        <div>
+                            <State
+                                onChange={handleInputChangeStateFilter} />
+                        </div>
+                        <div>
+                            <Category
+                                onChange={handleInputChangeCategoryFilter} />
+                        </div>
+                        <div>
+                            <Date
+                                onChange={handleInputChangeStartDateFilter} />
+                        </div>
+                        <div>
+                            <Date
+                                onChange={handleInputChangeEndDateFilter} />
+                        </div>
+                        <button
+                            type="button"
+                            onClick={createFilteredList}
+                        >
+                            Filter
+        </button>
                     </div>
                 </div>
             </nav>
@@ -57,4 +68,4 @@ function UserNavbar () {
         </div>
     )
 }
-export default UserNavbar
+export default UserNavbar;

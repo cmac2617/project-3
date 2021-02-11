@@ -1,6 +1,5 @@
 body{ 
     background-color: black;
-    background-image: url(brim.jpeg);
     background-size: cover;
 }
 /* Jumnbotron */
@@ -21,4 +20,7 @@ body{
 form{
     color: white;
     font-size: x-large;
+}
+.col-sm{
+border-top: black;
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import "./NewPlaceForm.css"
+import "./NewPlaceForm.css";
+
 
 export function Input(props) {
   return (
@@ -26,7 +27,7 @@ export function Category(props) {
         <option value="Bowling Alley">Bowling Alley</option>
         <option value="Business">Business</option>
         <option value="Cafe">Cafe</option>
-        <option value="Car Was">Car Wash</option>
+        <option value="Car Wash">Car Wash</option>
         <option value="Church">Church</option>
         <option value="Coffee Shop">Coffee Shop</option>
         <option value="Concert">Concert</option>
@@ -118,4 +119,12 @@ export function FormBtn(props) {
       {props.children}
     </button>
   );
+}
+
+export function Image(props) {
+  return (
+    <div>
+    <input type="file" id="myFile" name="filename" /><br />
+</div>
+  )
 }

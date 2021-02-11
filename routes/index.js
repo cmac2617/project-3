@@ -46,17 +46,26 @@ router.post("/api/newuser", function (req, res) {
   res.json(req.body);
 });
 
-router.post("/api/findplacetitle", function(req, res) {
-  console.log("HERE WE ARE");
-  console.log(req.body)
-  dbplaces.find(req.body).then(results => console.log(results))
-  
+router.post("/api/findplacecategory", function(req, res) {
+  console.log("Category route call (backend)");
+  dbplaces.find(req.body).then(results => {
+    console.log(results)
+    res.json(results)
+  })
 })
 router.post("/api/findplacestate", function(req, res) {
   console.log("HERE WE ARE for STATE");
-  console.log(req.body)
-  dbplaces.find(req.body).then(results => console.log(results))
-  
+  dbplaces.find(req.body).then(results => {
+    console.log(results)
+    res.json(results)
+  })
+})
+router.post("/api/createfilteredlist", function(req, res) {
+  console.log("HERE WE ARE for the FILTERED LIST");
+  dbplaces.find(req.body).then(results => {
+    console.log(results)
+    res.json(results)
+  })
 })
 
 

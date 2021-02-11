@@ -17,6 +17,12 @@ export default function Login() {
   }
 
   return (
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
     <div className="Register">
       <form>
       <Input
@@ -42,5 +48,12 @@ export default function Login() {
               </FormBtn>
               </form>
     </div>
+    </div>
+    <div class="col-sm">
+      
+    </div>
+  </div>
+</div>
+    
   );
 }
