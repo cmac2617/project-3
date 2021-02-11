@@ -9,7 +9,12 @@ const placesSchema = new Schema({
   state: { type: String, required: true},
   startDate: { type: Date, required: false },
   endDate: { type: Date, required: false },
-  category: { type: String, required: true }
+  category: { type: String, required: true },
+  image:
+    {
+        data: Buffer,
+        contentType: String
+    }
 });
 
 const  Places = mongoose.model("Places", placesSchema);
