@@ -15,9 +15,8 @@ export function Input(props) {
 }
 
 export function FormBtn(props) {
-  return (
-<<<<<<< HEAD
-    <div className="Login loginstyle">
+  return (<>
+    {/* <div className="Login loginstyle">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
@@ -40,15 +39,13 @@ export function FormBtn(props) {
           Login
         </Button>
       </Form>
-    </div>
-=======
+    </div> */}
     <button
       {...props}
       style={{ float: "right", marginBottom: 10 }}
       className="btn btn-success"
     >
       {props.children}
-    </button>
->>>>>>> 6f2f64d9bbb4a431e51ca8fd285eb70037651ccb
+    </button></>
   );
 }

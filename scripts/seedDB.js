@@ -15,7 +15,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Wine"
+  category: "Resturant"
   },
   {
   title: "Fleming's Prime Steakhouse & Wine Bar",
@@ -25,7 +25,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "Resturant"
   },
   {
     title: "Blue Point Grille",
@@ -35,7 +35,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "Resturant"
   },
   {
     title: "Morton's Steakhouse",
@@ -45,7 +45,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "Resturant"
   },
   {
     title: "Morton's Steakhouse",
@@ -55,7 +55,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "Resturant"
   },
   {
     title: "Marble Room",
@@ -65,7 +65,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "Resturant"
   },
   {
     title: "Alley Cat Oyster Bar",
@@ -75,7 +75,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Fine Dining"
+  category: "FResturant"
   },
   {
     title: "Western Reserve Meadery",
@@ -85,7 +85,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Wine"
+  category: "Resturant"
   },
   {
     title: "Sarah's Vineyard",
@@ -95,7 +95,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Wine"
+  category: "Resturant"
   },
   {
     title: "Sarah's Vineyard",
@@ -105,7 +105,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Wine"
+  category: "Resturant"
   },
   {
     title: "The Cleveland Brewery",
@@ -115,7 +115,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Brewery"
+  category: "Resturant"
   },
 
   {
@@ -126,7 +126,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Brewery"
+  category: "Resturant"
   },
 
   {
@@ -137,7 +137,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Brewery"
+  category: "Resturant"
   },
   {
     title: "Goldhorn Brewery",
@@ -147,7 +147,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Brewery"
+  category: "Resturant"
   },
   {
     title: "Brick and Barrel",
@@ -157,7 +157,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Brewery"
+  category: "Resturant"
   },
   {
     title: "The Velvet Tango Room",
@@ -167,7 +167,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Bar"
+  category: "Resturant"
   },
   {
     title: "Porco Lounge",
@@ -177,7 +177,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Bar"
+  category: "Resturant"
   },
   {
     title: "The Spotted Owl",
@@ -187,7 +187,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Bar"
+  category: "Resturant"
   },
   {
     title: "LBM",
@@ -197,7 +197,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Bar"
+  category: "Resturant"
   },
   {
     title: "Garden City",
@@ -207,7 +207,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Bar"
+  category: "Resturant"
   },
   {
     title: "Don Gi's Pizzeria",
@@ -217,7 +217,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Pizza"
+  category: "Resturant"
   },
   {
     title: "Pizza 216",
@@ -227,7 +227,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Pizza"
+  category: "Resturant"
   },
   {
     title: "Gionini's Pizza",
@@ -237,7 +237,7 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Pizza"
+  category: "Resturant"
   },
   {
     title: "Ohio City Pizzeria",
@@ -247,8 +247,147 @@ const placesSeed = [
   state: "Ohio",
   startDate: "",
   endDate: "",
-  category: "Pizza"
+  category: "Resturant"
   },
+  {
+    title: "Ohio City Pizzeria",
+  description: "Pizzeria",
+  addresss: "3223 Lorain ave, Cleveland 44113",
+  phone: "(216)281-5252",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Resturant"
+  },
+  {
+    title: "Top Golf",
+  description: "Fun",
+  addresss: "5820 Rockside Woods Bvld N, Independance, OH 44131",
+  phone: "(216)619-2464",
+  state: "Ohio",
+  startDate: "",
+  endDate: "",
+  category: "Golf Range"
+  },
+
+  {
+    title: "Macy's",
+  description: "Shopping",
+  addresss: "111 N State S",
+  phone: "(312) 781-1000",
+  state: "Illnois",
+  startDate: "",
+  endDate: "",
+  category: "Retail"
+  },
+
+  {
+    title: "Nordstrom Rack",
+  description: "Shopping",
+  addresss: "24 N State St",
+  phone: "(312) 377-5500",
+  state: "Illnois",
+  startDate: "",
+  endDate: "",
+  category: "Retail"
+  },
+
+  {
+    title: "SEPHORA",
+  description: "Shopping",
+  addresss: "108 N State St Unit 134, Chicago, IL 60602",
+  phone: "(312) 263-8688",
+  state: "Illnois",
+  startDate: "",
+  endDate: "",
+  category: "Retail"
+  },
+  {
+    title: "Disney Store",
+  description: "Toy Store",
+  addresss: "108 N State St ",
+  phone: "(312) 269-4776",
+  state: "Illnois",
+  startDate: "",
+  endDate: "",
+  category: "Retail"
+  },
+  {
+    title: "Neiman Marcus",
+  description: "Toy Store",
+  addresss: "737 N Michigan Ave",
+  phone: "(312) 642-5900",
+  state: "Illnois",
+  startDate: "",
+  endDate: "",
+  category: "Retail"
+  },
+  {
+    title: "Gold's Gym - Destin",
+  description: "Fitness",
+  addresss: "12200 Emerald Coast Pkwy, Miramar Beach, FL 32550",
+  phone: "(850) 837-7071",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+
+  {
+    title: "Planet Fitness",
+  description: "Fitness",
+  addresss: "4315 Florida Ave S, Lakeland, FL 33813",
+  phone: "(863) 816-6800",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+  {
+    title: "Powerhouse Gym Athletic Club",
+  description: "Fitness",
+  addresss: "3251-A W Hillsborough Ave, Tampa, FL 33614",
+  phone: "(813) 875-1600",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+
+  {
+    title: "Optimum Gym",
+  description: "Fitness",
+  addresss: "3020 W Kennedy Blvd B, Tampa, FL 33609",
+  phone: "(813) 876-4000",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+
+  {
+    title: "VKNG ROW",
+  description: "Fitness",
+  addresss: "701 W Platt St, Tampa, FL 33606",
+  phone: "(813) 260-0174",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+
+  {
+    title: "VKNG ROW",
+  description: "Fitness",
+  addresss: "701 W Platt St, Tampa, FL 33606",
+  phone: "(813) 260-0174",
+  state: "Floria",
+  startDate: "",
+  endDate: "",
+  category: "Gym"
+  },
+  
+
 
 ];
 places.collection.insertMany(seedData)
