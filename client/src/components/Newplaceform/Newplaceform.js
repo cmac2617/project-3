@@ -10,9 +10,19 @@ export function Input(props) {
   );
 }
 
-export function Date(props) {
+export function StartDate(props) {
   return (
     <div className="form-group">
+      <label>Start Date</label>
+      <input className="form-control" type="date" {...props} />
+    </div>
+  );
+}
+
+export function EndDate(props) {
+  return (
+    <div className="form-group">
+      <label>Start Date</label>
       <input className="form-control" type="date" {...props} />
     </div>
   );
@@ -116,15 +126,15 @@ export function State(props) {
 export function FormBtn(props) {
   return (
     <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
-      {props.children}
+      Submit Place
     </button>
   );
 }
 
-export function Image(props) {
+export function FormBtn1(props) {
   return (
-    <div>
-    <input type="file" id="myFile" name="filename" /><br />
-</div>
-  )
+    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
+      Filter
+    </button>
+  );
 }

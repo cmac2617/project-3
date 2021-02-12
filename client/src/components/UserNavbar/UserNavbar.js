@@ -1,10 +1,11 @@
 // Imports
 import React, { useEffect, useState } from 'react';
-import { Input, FormBtn, Date, Category, State } from "../NewPlaceForm/NewPlaceForm.js"
+import { Input, FormBtn1, StartDate, EndDate, Category, State } from "../NewPlaceForm/NewPlaceForm.js"
 import {
     Link
 } from "react-router-dom";
 import API from "../../utils/API";
+import "./UserNavbar.css"
 
 // Component
 function UserNavbar({ handleInputChangeCategory,
@@ -19,7 +20,7 @@ function UserNavbar({ handleInputChangeCategory,
         <div>
 
 
-            <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <nav className="navbar navbar-dark navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand logo" href="#">The People's Directory</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,36 +31,38 @@ function UserNavbar({ handleInputChangeCategory,
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
                             <a className="nav-link active" aria-current="page" href="/register">Register</a>
                         </div>
-                        <div>
+                        <div class="dropdown">
                             <Category
                                 onChange={handleInputChangeCategory} />
                         </div>
-                        <div>
+                        <div class = "dropdownlast">
                             <State
                                 onChange={handleInputChangeState} />
                         </div>
-                        <div>
+                        <div class="label">
+                            Apply Filters!
+                        </div>
+                        <div class = "dropdown">
                             <State
                                 onChange={handleInputChangeStateFilter} />
                         </div>
-                        <div>
+                        <div class = "dropdown">
                             <Category
                                 onChange={handleInputChangeCategoryFilter} />
                         </div>
-                        <div>
-                            <Date
+                        <div class = "dropdown">
+                            <StartDate
                                 onChange={handleInputChangeStartDateFilter} />
                         </div>
-                        <div>
-                            <Date
+                        <div class = "dropdown">
+                            <EndDate
                                 onChange={handleInputChangeEndDateFilter} />
                         </div>
-                        <button
-                            type="button"
-                            onClick={createFilteredList}
-                        >
-                            Filter
-        </button>
+                        <div>
+                            <FormBtn1
+                            onClick = {createFilteredList} />
+                        </div>
+                        
                     </div>
                 </div>
             </nav>

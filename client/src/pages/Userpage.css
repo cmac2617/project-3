@@ -1,5 +1,5 @@
 .boxes {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: #282c34;
     color: white;
 }
 
@@ -7,5 +7,11 @@ h5 {
     font-size: xx-large;
 }
 .col-2 {
-    background-color: black;
+    background-color: #282c34;
+}
+h2 {
+    color: white;
+}
+.col-12 {
+    background-color: #282c34;
 }

@@ -1,6 +1,27 @@
-.container {
+/* .container {
     font-size: xx-large;
-}
-.col-10 {
     background-color: black;
+    background-image: url("./businesses.jpg");
+} */
+.col-10 {
+   border-radius: 5px;
+    background-image: url("./businesses.jpg") !important;
+}
+
+/* .style {
+    background-color: black;
+} */
+/* .jumbotron-fluid {
+    background-color: black;
+    /* background-image: url("./businesses.jpg") */
+
+p {
+    font-family: Verdana, sans-serif !important;
+    color: black !important;
+    font-weight: bolder;
+}
+h1 {
+    font-family: cursive !important;
+    color: black !important;
+    font-weight: bold;
 }
