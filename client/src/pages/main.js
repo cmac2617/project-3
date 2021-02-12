@@ -62,7 +62,7 @@ function Main() {
           type="button"
           onClick={handleFormSubmit}
         >
-          Submit Place
+          Login
         </button>
       </form>
     </div>

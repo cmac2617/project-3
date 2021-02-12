@@ -1,9 +1,9 @@
 // After user logs in.
 import UserNavbar from "../components/UserNavbar/UserNavbar.js"
-import { Input, FormBtn, Date, Category, State, Image } from "../components/NewPlaceForm/NewPlaceForm.js"
+import { Input, FormBtn, StartDate, EndDate, Category, State } from "../components/NewPlaceForm/NewPlaceForm.js"
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import "../App.css"
+import "./Userpage.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js"
@@ -15,6 +15,8 @@ function Userpage() {
   }, []);
 
   // Functions for adding a new place to the database.
+  const [formObject, setFormObject] = useState({});
+
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
@@ -29,7 +31,6 @@ function Userpage() {
 
   // Functions to generate different lists by state and category on the page.
   var [category, setCategory] = useState([]);
-  const [formObject, setFormObject] = useState({});
   const [state, setState] = useState([])
 
   function handleInputChangeCategory(event) {
@@ -99,10 +100,11 @@ function Userpage() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-10">
-          <Jumbotron />
+            <Jumbotron />
           </div>
           <div className="col-2">
-            <form action="/action_page.php">Add your business or event!
+            <form>
+              Add your business or event!
         <Input
                 name="title"
                 placeholder="Title (required)"
@@ -111,6 +113,11 @@ function Userpage() {
               <Input
                 name="description"
                 placeholder="Description (not required)"
+                onChange={handleInputChange}
+              />
+              <Input
+                name="website"
+                placeholder="website (not required)"
                 onChange={handleInputChange}
               />
               <Input
@@ -128,12 +135,12 @@ function Userpage() {
                 placeholder="State (required)"
                 onChange={handleInputChange}
               />
-              <Date
+              <StartDate
                 name="startDate"
                 placeholder="Start Date (not required)"
                 onChange={handleInputChange}
               />
-              <Date
+              <EndDate
                 name="endDate"
                 placeholder="End Date (not required)"
                 onChange={handleInputChange}
@@ -147,7 +154,6 @@ function Userpage() {
                 // disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
               >
-                Submit Place
               </FormBtn>
             </form>
           </div>
@@ -160,33 +166,33 @@ function Userpage() {
 
 
       </div>
+      <div class="col-12">
       <div class="container-fluid">
         <div class="row">
 
           <div class="col-sm">
+            <h2>Generate a list of businesses and events by category!</h2>
             {category.map(each => {
-              return (
+            return (
 
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
-                  <div data-aos="fade-up" className="boxes">
-                    <div class="card-body">
-                      <h5 class="card-title">{each.title}</h5>
-                      <p class="card-text">{each.category}</p>
-                      <p class="card-text">{each.description}</p>
-                      <p class="card-text">Address: {each.address}</p>
-                      <p class="card-text">Phone Number: {each.phone}</p>
-                      <p class="card-text">Address: {each.address}</p>
-                      <p class="card-text">State: {each.state}</p>
-                      <p class="card-text">Start Date: {each.startDate}</p>
-                      <p class="card-text">Address: {each.endDate}</p>
-                    </div>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div className="card">
+                <div data-aos="fade-up" className="boxes">
+                  <div class="card-body">
+                    <h5 class="card-title">{each.title}</h5>
+                    <p class="card-text">{each.category}</p>
+                    <p class="card-text">{each.description}</p>
+                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
+                    <p class="card-text">Address: {each.address}</p>
+                    <p class="card-text">Phone Number: {each.phone}</p>
+                    <p class="card-text">Address: {each.address}</p>
+                    <p class="card-text">State: {each.state}</p>
+                    <p class="card-text">Start Date: {each.startDate}</p>
+                    <p class="card-text">Address: {each.endDate}</p>
                   </div>
                 </div>
-              )
-            })}
+              </div>
+            )
+          })}
           </div>
 
 
@@ -195,51 +201,54 @@ function Userpage() {
 
 
           <div class="col-sm">
+            <h2>Generate a list of events and businesses by state!</h2>
             {state.map(each => {
-              return (
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+            return (
+              <div className="card">
+                <div data-aos="fade-up" className="boxes">
                   <div class="card-body">
                     <h5 class="card-title">{each.title}</h5>
                     <p class="card-text">{each.category}</p>
                     <p class="card-text">{each.description}</p>
+                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
                     <p class="card-text">Address: {each.address}</p>
                     <p class="card-text">Phone Number: {each.phone}</p>
                     <p class="card-text">Address: {each.address}</p>
                     <p class="card-text">State: {each.state}</p>
                     <p class="card-text">Start Date: {each.startDate}</p>
                     <p class="card-text">Address: {each.endDate}</p>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-              )
-            })}
+              </div>
+            )
+          })}
 
           </div>
           <div class="col-sm">
+            <h2>Generate a filtered list of events and businesses!</h2>
             {filterObject.map(each => {
-              return (
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+            return (
+              <div className="card">
+                <div data-aos="fade-up" className="boxes">
                   <div class="card-body">
                     <h5 class="card-title">{each.title}</h5>
                     <p class="card-text">{each.category}</p>
                     <p class="card-text">{each.description}</p>
+                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
                     <p class="card-text">Address: {each.address}</p>
                     <p class="card-text">Phone Number: {each.phone}</p>
                     <p class="card-text">Address: {each.address}</p>
                     <p class="card-text">State: {each.state}</p>
                     <p class="card-text">Start Date: {each.startDate}</p>
                     <p class="card-text">Address: {each.endDate}</p>
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-              )
-            })}
+              </div>
+            )
+          })}
           </div>
         </div>
+      </div>
       </div>
     </div>
 
