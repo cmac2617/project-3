@@ -24,7 +24,7 @@ function Userpage() {
   }
 
   function handleFormSubmit(event) {
-    // event.preventdefault();
+    event.preventdefault();
     console.log("submitted")
     API.savePlace(formObject).then(results => console.log(results))
   };
@@ -103,7 +103,7 @@ function Userpage() {
             <Jumbotron />
           </div>
           <div className="col-2">
-            <form>
+            
               Add your business or event!
         <Input
                 name="title"
@@ -155,7 +155,7 @@ function Userpage() {
                 onClick={handleFormSubmit}
               >
               </FormBtn>
-            </form>
+            
           </div>
         </div>
 

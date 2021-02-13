@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 import Navbar from "../components/Navbar/Navbar.js";
 import { Input, FormBtn } from "../components/Login/Login.js";
+import "../App.css"
 // import User from "../../models/user.js"
 // API.getEvents()
 // .then(function (response) {
