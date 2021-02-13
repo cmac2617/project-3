@@ -63,9 +63,6 @@ function LoginModal(props) {
               placeholder="Enter your email address."
               onChange={handleInputChange}
             />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-    </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
@@ -75,12 +72,6 @@ function LoginModal(props) {
               onChange={handleInputChange}
             />
           </Form.Group>
-          <button
-            type="button"
-            onClick={handleFormSubmit}
-          >
-            Submit Place
-        </button>
         </Form>
         <p>Not a member yet? <a href="/Register">Sign up.</a></p>
       </Modal.Body>

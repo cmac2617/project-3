@@ -8,22 +8,21 @@
     }
 } */
 
-.card-group{
-    width: 200% !important;
-    border-radius: calc(.25rem - 1px) !important;
-    background-color: violet !important;
-}
-.Card1 {
-    width: 50%;
-    padding: 40px 30px 10px 30px;
-    background-color: violet !important;
+.card {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    justify-content: center;
 }
 
-.Card2 {
-    width: 50%;
-    padding: 40px 30px 10px 30px
+.card-img-left {
+    height: 280px;
+    width: 285px;
 }
 
 form {
     width: 100%;
+    color: black !important;
 }
+

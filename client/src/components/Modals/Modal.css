@@ -11,6 +11,11 @@
 
 .form-control {
     width: 100% !important;
+    color: black !important;
   }
+
+.form-label {
+  color: black;
+}
 
   :focus {outline:0 !important;}

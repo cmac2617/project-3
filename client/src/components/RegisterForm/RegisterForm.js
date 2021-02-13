@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, CardGroup, Card } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../Newplaceform/NewPlaceForm.js"
 import './RegisterForm.css';
@@ -19,15 +20,15 @@ export default function Login() {
   }
 
   return (
-    <Container>
-      <Row>
-        <CardGroup>
-        <Card className="Card1">
-            
-            </Card>
-          <Card className="Card2">
-            <div className="Register">
-              <form>
+    
+        <div className="card mb-3" style={{width: '800px'}}>
+        <div className="row no-gutters">
+          <div className="col-md-4">
+          <Card.Img variant="left" src="https://i.imgur.com/kEhgjzb.jpg" />
+          </div>
+          <div className="col-md-8">
+            <div className="card-body">
+            <form>
                 <Input
                   name="name"
                   placeholder="Name (required)"
@@ -38,6 +39,7 @@ export default function Login() {
                   placeholder="E-mail (required)"
                   onChange={handleInputChange}
                 />
+                <p>We'll never share your email with anyone else.</p>
                 <Input
                   name="password"
                   placeholder="Password (required)"
@@ -47,13 +49,12 @@ export default function Login() {
                   // disabled={!(formObject.author && formObject.title)}
                   onClick={handleFormSubmit}
                 >
-                  Submit Place
+                  Sign Up
               </FormBtn>
               </form>
             </div>
-          </Card>
-        </CardGroup>
-      </Row>
-    </Container>
+          </div>
+        </div>
+      </div>
   );
 }
