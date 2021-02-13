@@ -5,7 +5,7 @@ import "./Login.css";
 
 export function Input(props) {
   return (
-    <form action="login" method="post">
+    <form>
       <div className="form-group">
         <input className="form-control" {...props} />
       </div>

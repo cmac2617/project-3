@@ -166,28 +166,28 @@ function Userpage() {
 
 
       </div>
-      <div class="col-12">
-      <div class="container-fluid">
-        <div class="row">
+      <div className="col-12">
+      <div className="container-fluid">
+        <div className="row">
 
-          <div class="col-sm">
+          <div className="col-sm">
             <h2>Generate a list of businesses and events by category!</h2>
             {category.map(each => {
             return (
 
               <div className="card">
                 <div data-aos="fade-up" className="boxes">
-                  <div class="card-body">
-                    <h5 class="card-title">{each.title}</h5>
-                    <p class="card-text">{each.category}</p>
-                    <p class="card-text">{each.description}</p>
-                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">Phone Number: {each.phone}</p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">State: {each.state}</p>
-                    <p class="card-text">Start Date: {each.startDate}</p>
-                    <p class="card-text">Address: {each.endDate}</p>
+                  <div className="card-body">
+                    <h5 className="card-title">{each.title}</h5>
+                    <p className="card-text">{each.category}</p>
+                    <p className="card-text">{each.description}</p>
+                    <p className="card-text"><a href={each.website}>{each.website}</a></p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">Phone Number: {each.phone}</p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">State: {each.state}</p>
+                    <p className="card-text">Start Date: {each.startDate}</p>
+                    <p className="card-text">Address: {each.endDate}</p>
                   </div>
                 </div>
               </div>
@@ -200,23 +200,23 @@ function Userpage() {
 
 
 
-          <div class="col-sm">
+          <div className="col-sm">
             <h2>Generate a list of events and businesses by state!</h2>
             {state.map(each => {
             return (
               <div className="card">
                 <div data-aos="fade-up" className="boxes">
-                  <div class="card-body">
-                    <h5 class="card-title">{each.title}</h5>
-                    <p class="card-text">{each.category}</p>
-                    <p class="card-text">{each.description}</p>
-                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">Phone Number: {each.phone}</p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">State: {each.state}</p>
-                    <p class="card-text">Start Date: {each.startDate}</p>
-                    <p class="card-text">Address: {each.endDate}</p>
+                  <div className="card-body">
+                    <h5 className="card-title">{each.title}</h5>
+                    <p className="card-text">{each.category}</p>
+                    <p className="card-text">{each.description}</p>
+                    <p className="card-text"><a href={each.website}>{each.website}</a></p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">Phone Number: {each.phone}</p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">State: {each.state}</p>
+                    <p className="card-text">Start Date: {each.startDate}</p>
+                    <p className="card-text">Address: {each.endDate}</p>
                   </div>
                 </div>
               </div>
@@ -224,23 +224,23 @@ function Userpage() {
           })}
 
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <h2>Generate a filtered list of events and businesses!</h2>
             {filterObject.map(each => {
             return (
               <div className="card">
                 <div data-aos="fade-up" className="boxes">
-                  <div class="card-body">
-                    <h5 class="card-title">{each.title}</h5>
-                    <p class="card-text">{each.category}</p>
-                    <p class="card-text">{each.description}</p>
-                    <p class="card-text"><a href={each.website}>{each.website}</a></p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">Phone Number: {each.phone}</p>
-                    <p class="card-text">Address: {each.address}</p>
-                    <p class="card-text">State: {each.state}</p>
-                    <p class="card-text">Start Date: {each.startDate}</p>
-                    <p class="card-text">Address: {each.endDate}</p>
+                  <div className="card-body">
+                    <h5 className="card-title">{each.title}</h5>
+                    <p className="card-text">{each.category}</p>
+                    <p className="card-text">{each.description}</p>
+                    <p className="card-text"><a href={each.website}>{each.website}</a></p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">Phone Number: {each.phone}</p>
+                    <p className="card-text">Address: {each.address}</p>
+                    <p className="card-text">State: {each.state}</p>
+                    <p className="card-text">Start Date: {each.startDate}</p>
+                    <p className="card-text">Address: {each.endDate}</p>
                   </div>
                 </div>
               </div>

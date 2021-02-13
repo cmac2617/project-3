@@ -47,7 +47,7 @@ function Main() {
     <div>
       <Navbar />
       <Jumbotron />
-      <form>
+      
         <Input
           name="email"
           placeholder="Enter your email address."
@@ -64,7 +64,7 @@ function Main() {
         >
           Login
         </button>
-      </form>
+      
     </div>
   );
 }

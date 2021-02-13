@@ -31,30 +31,30 @@ function UserNavbar({ handleInputChangeCategory,
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
                             <a className="nav-link active" aria-current="page" href="/register">Register</a>
                         </div>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <Category
                                 onChange={handleInputChangeCategory} />
                         </div>
-                        <div class = "dropdownlast">
+                        <div className = "dropdownlast">
                             <State
                                 onChange={handleInputChangeState} />
                         </div>
-                        <div class="label">
+                        <div className="label">
                             Apply Filters!
                         </div>
-                        <div class = "dropdown">
+                        <div className = "dropdown">
                             <State
                                 onChange={handleInputChangeStateFilter} />
                         </div>
-                        <div class = "dropdown">
+                        <div className = "dropdown">
                             <Category
                                 onChange={handleInputChangeCategoryFilter} />
                         </div>
-                        <div class = "dropdown">
+                        <div className = "dropdown">
                             <StartDate
                                 onChange={handleInputChangeStartDateFilter} />
                         </div>
-                        <div class = "dropdown">
+                        <div className = "dropdown">
                             <EndDate
                                 onChange={handleInputChangeEndDateFilter} />
                         </div>
