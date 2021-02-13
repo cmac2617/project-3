@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../NewPlaceForm/NewPlaceForm.js"
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
   const [formObject, setFormObject] = useState({});
+  let history = useHistory();
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -13,7 +15,10 @@ export default function Login() {
   function handleFormSubmit (event) {
     event.preventDefault();
     console.log("submitted")
-    API.saveUser(formObject).then(results => console.log(results))
+    API.saveUser(formObject).then(results => {
+      console.log(results)
+      history.push("/")
+    })
   }
 
   return (
@@ -24,7 +29,7 @@ export default function Login() {
     </div>
     <div className="col-sm">
     <div className="Register">
-      <form>
+      
       <Input
                 name="name"
                 placeholder="Name (required)"
@@ -39,14 +44,15 @@ export default function Login() {
                 name="password"
                 placeholder="Password (required)"
                 onChange={handleInputChange}
+                type="password"
               />
               <FormBtn
                 // disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
               >
-                Submit Place
+                Register
               </FormBtn>
-              </form>
+              
     </div>
     </div>
     <div className="col-sm">

@@ -57,6 +57,7 @@ function Main() {
           name="password"
           placeholder="Enter your password."
           onChange={handleInputChange}
+          type="password"
         />
         <button
           type="button"
