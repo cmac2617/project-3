@@ -187,7 +187,7 @@ function Userpage() {
                     <p className="card-text">Address: {each.address}</p>
                     <p className="card-text">State: {each.state}</p>
                     <p className="card-text">Start Date: {each.startDate}</p>
-                    <p className="card-text">Address: {each.endDate}</p>
+                    <p className="card-text">End Date: {each.endDate}</p>
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@ function Userpage() {
                     <p className="card-text">Address: {each.address}</p>
                     <p className="card-text">State: {each.state}</p>
                     <p className="card-text">Start Date: {each.startDate}</p>
-                    <p className="card-text">Address: {each.endDate}</p>
+                    <p className="card-text">End Date: {each.endDate}</p>
                   </div>
                 </div>
               </div>
@@ -240,7 +240,7 @@ function Userpage() {
                     <p className="card-text">Address: {each.address}</p>
                     <p className="card-text">State: {each.state}</p>
                     <p className="card-text">Start Date: {each.startDate}</p>
-                    <p className="card-text">Address: {each.endDate}</p>
+                    <p className="card-text">End Date: {each.endDate}</p>
                   </div>
                 </div>
               </div>
