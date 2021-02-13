@@ -47,7 +47,7 @@ function Main() {
     <div>
       <Navbar />
       <Jumbotron />
-      <form>
+      
         <Input
           name="email"
           placeholder="Enter your email address."
@@ -57,6 +57,7 @@ function Main() {
           name="password"
           placeholder="Enter your password."
           onChange={handleInputChange}
+          type="password"
         />
         <button
           type="button"
@@ -64,7 +65,7 @@ function Main() {
         >
           Login
         </button>
-      </form>
+      
     </div>
   );
 }
