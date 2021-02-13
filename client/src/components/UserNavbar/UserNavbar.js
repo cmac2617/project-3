@@ -1,6 +1,6 @@
 // Imports
 import React, { useEffect, useState } from 'react';
-import { Input, FormBtn1, StartDate, EndDate, Category, State } from "../NewPlaceForm/NewPlaceForm.js"
+import { Input, FormBtn1, StartDate, EndDate, Category, State } from "../Newplaceform/Newplaceform.js"
 import {
     Link
 } from "react-router-dom";

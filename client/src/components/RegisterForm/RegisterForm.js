@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import API from "../../utils/API";
-import { Input, FormBtn } from "../NewPlaceForm/NewPlaceForm.js"
+import { Input, FormBtn } from "../Newplaceform/Newplaceform.js"
 import { useHistory } from "react-router-dom";
 
 export default function Login() {

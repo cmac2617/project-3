@@ -1,6 +1,6 @@
 // After user logs in.
 import UserNavbar from "../components/UserNavbar/UserNavbar.js"
-import { Input, FormBtn, StartDate, EndDate, Category, State } from "../components/NewPlaceForm/Newplaceform.js"
+import { Input, FormBtn, StartDate, EndDate, Category, State } from "../components/Newplaceform/Newplaceform.js"
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import "./Userpage.css";
