@@ -125,7 +125,7 @@ export function State(props) {
 
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
+    <button {...props} type="button" style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
       Submit Place
     </button>
   );
@@ -133,7 +133,7 @@ export function FormBtn(props) {
 
 export function FormBtn1(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
+    <button {...props} type="button" style={{ float: "right", marginBottom: 10 }} className="btn btn-success frmbutton">
       Filter
     </button>
   );

@@ -24,7 +24,7 @@ function Userpage() {
   }
 
   function handleFormSubmit(event) {
-    event.preventdefault();
+    event.preventDefault();
     console.log("submitted")
     API.savePlace(formObject).then(results => console.log(results))
   };
